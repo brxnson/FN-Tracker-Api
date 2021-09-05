@@ -28,7 +28,7 @@ class FortniteTracker {
 
     /**
      * @param {String} EpicName The epic name to make the request for
-     * @param {String} Platform The platform to do the request in
+     * @param {String} Platform The platform to make the request for
      */
     async getPlayerStats(EpicName, Platform) {
         if (!Platform || !EpicName) throw new TypeError("Make sure your provide a valid platform and epicname!")
