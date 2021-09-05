@@ -27,8 +27,8 @@ class FortniteTracker {
     }
 
     /**
-     * @param {String} Platform The platform to do the request in
      * @param {String} EpicName The epic name to make the request for
+     * @param {String} Platform The platform to do the request in
      */
     async getPlayerStats(EpicName, Platform) {
         if (!Platform || !EpicName) throw new TypeError("Make sure your provide a valid platform and epicname!")
@@ -37,10 +37,10 @@ class FortniteTracker {
         return GetPlayerStats(this.Token, Platform, EpicName)
     }
 
-    /**
+    /**     
+     * @param {String} EpicName The epicname to make the request for
      * @param {String} Platform The platform to make the request for
      * @param {String} Region The region to make the request for
-     * @param {String} EpicName The epicname to make the request for
      */
     async getPowerRankings(EpicName, Platform, Region) {
         if (!Platform || !Region || !EpicName) throw new TypeError("Make sure you provide a valid platform, region and epicname!")
