@@ -1,0 +1,24 @@
+{
+  "name": "fn-tracker-apiwrapper",
+  "version": "1.0.0",
+  "description": "NPM package to ease the use of the fortnitetracker api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brxnson/FN-Tracker-ApiWrapper.git"
+  },
+  "keywords": [
+    "Fortnite",
+    "Api",
+    "Fortnite Tracker"
+  ],
+  "author": "Brxnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brxnson/FN-Tracker-ApiWrapper/issues"
+  },
+  "homepage": "https://github.com/brxnson/FN-Tracker-ApiWrapper#readme"
+}
