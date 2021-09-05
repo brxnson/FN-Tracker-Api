@@ -45,7 +45,7 @@ class FortniteTracker {
     async getPowerRankings(EpicName, Platform, Region) {
         if (!Platform || !Region || !EpicName) throw new TypeError("Make sure you provide a valid platform, region and epicname!")
         if (typeof Platform !== "string" || typeof Region !== "string" || typeof EpicName  !== "string") throw new TypeError("Make sure you provide a valid platform, region and epicname!")
-        if (Platform !== "pc" && Platform !== "console" && Platform !== "mobile") throw new TypeError("Make sure your provided platform is one of these strings: \"pc\", \"console\", \"mobile\"")
+        if (Platform.toLowerCase() !== "pc" && Platform.toLowerCase() !== "console" && Platform.toLowerCase() !== "mobile") throw new TypeError("Make sure your provided platform is one of these strings: \"pc\", \"console\", \"mobile\"")
         if (Region.toLowerCase() !== "eu" && Region.toLowerCase() !== "naw" && Region.toLowerCase() !== "nae" && Region.toLowerCase() !== "oce" && Region.toLowerCase() !== "asia" && Region.toLowerCase() !== "me" && Region.toLowerCase() !== "br") throw new TypeError("Make sure your provided region is a valid region!")
         return GetPowerRankings(this.Token, Platform, Region, EpicName)
     }
