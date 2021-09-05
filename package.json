@@ -1,6 +1,6 @@
 {
   "name": "fn-tracker-api",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "NPM package to ease the use of the fortnitetracker api",
   "main": "index.js",
   "scripts": {
