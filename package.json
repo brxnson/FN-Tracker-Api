@@ -1,5 +1,5 @@
 {
-  "name": "fn-tracker-apiwrapper",
+  "name": "fn-tracker-api",
   "version": "1.0.0",
   "description": "NPM package to ease the use of the fortnitetracker api",
   "main": "index.js",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/brxnson/FN-Tracker-ApiWrapper/issues"
   },
-  "homepage": "https://github.com/brxnson/FN-Tracker-ApiWrapper#readme"
+  "homepage": "https://github.com/brxnson/FN-Tracker-ApiWrapper#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
 }
