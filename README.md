@@ -27,17 +27,17 @@ FNTrackerClient.getStore().then(async data => {console.log(data)})
 ## getMatchHistory("User account Id")
 Get the fortnite match history from the provided users account id
 ```js
-FNTrackerClient.getMatchHistory("b1811346250a40a1ae78d175a4806061")
+FNTrackerClient.getMatchHistory("b1811346250a40a1ae78d175a4806061").then(async data => console.log(data))
 ```
 
 ## getPlayerStats("EpicName", "Platform")
 Get the fortnite player stats from the provided epic name and platform
 ```js
-FNTrackerClient.getPlayerStats("Brxnson", "kbm")
+FNTrackerClient.getPlayerStats("Brxnson", "kbm").then(async data => console.log(data))
 ```
 
 ## getPowerRankings("EpicName", "Platform", "Region")
 Get the power rankings of the provided user from the provided platform and region
 ```js
-FNTrackerClient.getPowerRankings("Brxnson", "pc", "eu")
+FNTrackerClient.getPowerRankings("Brxnson", "pc", "eu").then(async data => console.log(data))
 ```
