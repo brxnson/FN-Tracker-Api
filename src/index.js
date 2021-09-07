@@ -42,7 +42,7 @@ class FortniteTracker {
      * @param {String} Platform The platform to make the request for
      * @param {String} Region The region to make the request for
      */
-    async getPowerRankings(EpicName, Platform, Region) {
+    async getPowerRanking(EpicName, Platform, Region) {
         if (!Platform || !Region || !EpicName) throw new TypeError("Make sure you provide a valid platform, region and epicname!")
         if (typeof Platform !== "string" || typeof Region !== "string" || typeof EpicName  !== "string") throw new TypeError("Make sure you provide a valid platform, region and epicname!")
         if (Platform.toLowerCase() !== "pc" && Platform.toLowerCase() !== "console" && Platform.toLowerCase() !== "mobile") throw new TypeError("Make sure your provided platform is one of these strings: \"pc\", \"console\", \"mobile\"")

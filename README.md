@@ -15,7 +15,7 @@ npm install fn-tracker-api
 const FortniteTracker = require ("fn-tracker-api")
 const FNTrackerClient = new FortniteTracker("Your fortnite tracker api key") // replace the string with your api key
 
-FNTrackerClient.getPowerRankings("Brxnson", "pc", "eu").then(async data => console.log(data))
+FNTrackerClient.getPowerRanking("Brxnson", "pc", "eu").then(async data => console.log(data))
 ```
 
 # getStore()
@@ -36,8 +36,8 @@ Get the fortnite player stats from the provided epic name and platform
 FNTrackerClient.getPlayerStats("Brxnson", "kbm").then(async data => console.log(data))
 ```
 
-## getPowerRankings("EpicName", "Platform", "Region")
+## getPowerRanking("EpicName", "Platform", "Region")
 Get the power rankings of the provided user from the provided platform and region
 ```js
-FNTrackerClient.getPowerRankings("Brxnson", "pc", "eu").then(async data => console.log(data))
+FNTrackerClient.getPowerRanking("Brxnson", "pc", "eu").then(async data => console.log(data))
 ```
